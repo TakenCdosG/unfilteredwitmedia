@@ -1,0 +1,11 @@
+/*
+Customizer Styles Bo!
+*/
+
+.customize-control-background .upload-button, .customize-control-header .new, .customize-control-image .upload-button, .customize-control-upload .upload-button {
+float: left;
+}
+
+.customize-control-title {
+	padding-top:10px;
+}
