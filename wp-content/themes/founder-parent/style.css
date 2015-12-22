@@ -1318,8 +1318,8 @@ color: #ef6641;
 color: #010101;
 }
 .blog .hero-inside{
-margin-left:15%;
-width:85%;
+ margin-left: 25%;
+ width: 75%;
 }
 .mc4wp-form button, .mc4wp-form input[type=submit]{
 width:100%;
@@ -2718,7 +2718,7 @@ display:block;
 }
 
 .hero-section {
-width: 70%;
+width: 90%;
 color:#fff;
 }
 
