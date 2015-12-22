@@ -105,7 +105,7 @@ function jetpack_the_site_logo() {
 	if ( ! jetpack_has_site_logo() ) {
 		if ( jetpack_is_customize_preview() ) {
 			$html = sprintf( '<a href="%1$s" class="site-logo-link" style="display:none;"><img class="site-logo" data-size="%2$s" /></a>',
-				esc_url( home_url( '/' ) ),
+				esc_url( home_url( '/blog' ) ),
 				esc_attr( $size )
 			);
 		}
@@ -114,7 +114,7 @@ function jetpack_the_site_logo() {
 	// We have a logo. Logo is go.
 	else {
 		$html = sprintf( '<a href="%1$s" class="site-logo-link" rel="home" itemprop="url">%2$s</a>',
-			esc_url( home_url( '/' ) ),
+			esc_url( home_url( '/blog' ) ),
 			wp_get_attachment_image(
 				$logo['id'],
 				$size,
