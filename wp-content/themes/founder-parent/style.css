@@ -1304,6 +1304,7 @@ left: 0;
 overflow: hidden;
 width: 100% !important;
 height: 100%;
+ min-height: 756px;
 background-repeat: no-repeat !important;
 background-position: center center !important;
 }
