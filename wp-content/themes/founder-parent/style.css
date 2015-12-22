@@ -4435,3 +4435,14 @@ bottom: 25px!important;
 }
 
 }
+
+
+/**** social icons***/
+
+#menu-social ul li{
+ display: none;
+}
+
+#menu-social ul li#menu-item-374{
+ display: block;
+}
