@@ -1410,6 +1410,10 @@ font-size: 42px;
 line-height:1.3;
 }
 
+.single-format-standard h1.entry-title{
+color: #ef6641;
+}
+
 .site-header .logo-single {
 max-width: 100%;
 margin: 0 0 1% 0;
