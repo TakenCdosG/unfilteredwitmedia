@@ -18,9 +18,9 @@
 					<?php dynamic_sidebar( 'footer-widget-2' ); ?>
 				</div>
 
-				<div class="subscribe-footer-new">
-					<?php dynamic_sidebar( 'footer-widget-3' ); ?>
-				</div>
+				<!--<div class="subscribe-footer-new">
+					<?php /*dynamic_sidebar( 'footer-widget-3' ); */?>
+				</div>-->
 
 				<div class="subscribe-footer-new">
 					<?php dynamic_sidebar( 'footer-widget-4' ); ?>
