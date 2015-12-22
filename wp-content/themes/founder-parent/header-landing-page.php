@@ -124,8 +124,8 @@
               </div>
 
   <!-- background cover image -->
-  <div class="site-header-bg-wrap">
+<!--  <div class="site-header-bg-wrap">
       <div class="site-header-bg-image background-cover-image"></div>
-    </div>
+    </div>-->
 
   </header><!-- #masthead -->		

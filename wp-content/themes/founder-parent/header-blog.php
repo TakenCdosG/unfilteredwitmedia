@@ -146,12 +146,12 @@
                } if( is_404() ) {
                 $image = wp_get_attachment_image_src(get_post_thumbnail_id(),'full');
                 echo ' <div class="background-cover-image" style="background-image: url('.$image[0].')" ></div>';
-              
+
               } elseif ( is_page_template() ) {
                 $image = wp_get_attachment_image_src(get_post_thumbnail_id(),'full');
                 echo ' <div class="background-cover-image" style="background-image: url('.$image[0].')" ></div>';
               }
-           
+
            ?>
 
             </div>

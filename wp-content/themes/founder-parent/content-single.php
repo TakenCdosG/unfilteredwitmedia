@@ -18,12 +18,12 @@ get_header( 'sub' ); ?>
     
 
 <!-- background cover image -->
-<div class="site-header-bg-wrap">
- <?php if (has_post_thumbnail( $post->ID ) && ( $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '') ) && isset( $image[0] ) ) { ?>
- <div class="background-cover-image" style="background-image: url('<?php echo esc_attr ( $image[0] ); ?>')" ></div>
- <?php }
- ?>
-</div>
+<!--<div class="site-header-bg-wrap">
+ <?php /*if (has_post_thumbnail( $post->ID ) && ( $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '') ) && isset( $image[0] ) ) { */?>
+ <div class="background-cover-image" style="background-image: url('<?php /*echo esc_attr ( $image[0] ); */?>')" ></div>
+ <?php /*}
+ */?>
+</div>-->
 </header>
 <!-- #masthead -->
 
