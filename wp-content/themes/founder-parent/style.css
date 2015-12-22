@@ -4450,5 +4450,6 @@ bottom: 25px!important;
 body .mc4wp-form-theme-green button, body .mc4wp-form-theme-green input[type=submit]{
  width: 100% !important;
  border-color: #f69944 !important;
- background-color: #f69944 !important;;
+ background-color: #f69944 !important;
+ max-width: 351px !important;
 }
