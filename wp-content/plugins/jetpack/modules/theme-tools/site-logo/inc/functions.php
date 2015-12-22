@@ -62,6 +62,10 @@ function jetpack_get_site_logo_dimensions() {
 	} else {
 		global $_wp_additional_image_sizes;
 
+		if ( ! isset( $_wp_additional_image_sizes[ $size ] ) ) {
+			return false;
+		}
+
 		$dimensions  = array(
 			'width'  => $_wp_additional_image_sizes[ $size ][ 'width' ],
 			'height' => $_wp_additional_image_sizes[ $size ][ 'height' ],
@@ -98,7 +102,7 @@ function jetpack_has_site_logo() {
  */
 function jetpack_the_site_logo() {
 	$logo = site_logo()->logo;
-	//$size = site_logo()->theme_size();
+	$size = site_logo()->theme_size();
 	$html = '';
 
 	// If no logo is set, but we're in the Customizer, leave a placeholder (needed for the live preview).
@@ -130,6 +134,8 @@ function jetpack_the_site_logo() {
 
 	/**
 	 * Filter the Site Logo output.
+	 *
+	 * @module theme-tools
 	 *
 	 * @since 3.2.0
 	 *

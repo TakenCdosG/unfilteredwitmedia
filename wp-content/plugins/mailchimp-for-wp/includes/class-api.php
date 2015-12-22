@@ -3,7 +3,9 @@
 /**
  * Takes care of requests to the MailChimp API
  *
+ * @access public
  * @uses WP_HTTP
+ * @since 1.0
  */
 class MC4WP_API {
 
@@ -23,7 +25,7 @@ class MC4WP_API {
 	protected $error_message = '';
 
 	/**
-	 * @var int The error code of the lastest API request (if any)
+	 * @var int The error code of the last API request (if any)
 	 */
 	protected $error_code = 0;
 
@@ -59,6 +61,7 @@ class MC4WP_API {
 	 * @return bool
 	 */
 	private function show_error( $message ) {
+
 		if( ! is_admin() || ! current_user_can( 'manage_options' ) ) {
 			return false;
 		}
@@ -327,6 +330,23 @@ class MC4WP_API {
 	}
 
 	/**
+	 * @param array $order_data
+	 * @see https://apidocs.mailchimp.com/api/2.0/ecomm/order-add.php
+	 * @return boolean
+	 */
+	public function add_ecommerce_order( array $order_data ) {
+		$response = $this->call( 'ecomm/order-add', array( 'order' => $order_data ) );
+
+		if( is_object( $response ) ) {
+			if ( isset( $response->complete ) && $response->complete ) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	/**
 	 * Calls the MailChimp API
 	 *
 	 * @uses WP_HTTP
@@ -346,14 +366,16 @@ class MC4WP_API {
 		}
 
 		$data['apikey'] = $this->api_key;
-		$url = $this->api_url . $method . '.json';
 
-		$response = wp_remote_post( $url, array(
-				'body' => $data,
-				'timeout' => 10,
-				'headers' => $this->get_headers()
-			)
+		$url = $this->api_url . $method . '.json';
+		$request_args = array(
+			'body' => $data,
+			'timeout' => 10,
+			'headers' => $this->get_headers(),
+			'sslverify' => apply_filters( 'mc4wp_use_sslverify', true ),
 		);
+
+		$response = wp_remote_post( $url, $request_args );
 
 		// test for wp errors
 		if( is_wp_error( $response ) ) {
