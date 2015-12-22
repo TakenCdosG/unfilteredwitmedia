@@ -113,7 +113,8 @@ function jetpack_the_site_logo() {
 
 	// We have a logo. Logo is go.
 	else {
-		$html = sprintf( '<a href="%1$s" class="site-logo-link" rel="home" itemprop="url">%2$s</a>',
+		//$html = sprintf( '<a href="%1$s" class="site-logo-link" rel="home" itemprop="url">%2$s</a>',
+		$html = sprintf( '%2$s',
 			esc_url( home_url( '/' ) ),
 			wp_get_attachment_image(
 				$logo['id'],
