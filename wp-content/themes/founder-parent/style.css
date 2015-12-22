@@ -4453,3 +4453,12 @@ body .mc4wp-form-theme-green button, body .mc4wp-form-theme-green input[type=sub
  background-color: #f69944 !important;
  max-width: 351px !important;
 }
+
+body .mc4wp-form-theme-green button:hover, body .mc4wp-form-theme-green input[type=submit]:hover{
+ border-color: #f69944 !important;
+ background-color: #f69944 !important;
+}
+
+.mc4wp-form-theme input[type=text], .mc4wp-form-theme input[type=email], .mc4wp-form-theme input[type=tel], .mc4wp-form-theme input[type=url], .mc4wp-form-theme input[type=date], .mc4wp-form-theme input[type=number], .mc4wp-form-theme select, .mc4wp-form-theme textarea{
+ max-width: 351px !important;
+}
