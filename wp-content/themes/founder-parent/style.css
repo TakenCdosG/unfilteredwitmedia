@@ -4463,3 +4463,11 @@ body .mc4wp-form-theme-green button:hover, body .mc4wp-form-theme-green input[ty
 .mc4wp-form-theme input[type=text], .mc4wp-form-theme input[type=email], .mc4wp-form-theme input[type=tel], .mc4wp-form-theme input[type=url], .mc4wp-form-theme input[type=date], .mc4wp-form-theme input[type=number], .mc4wp-form-theme select, .mc4wp-form-theme textarea{
  max-width: 351px !important;
 }
+
+a.more-link span{
+ color: rgb(239, 102, 65);
+}
+a.more-link{
+border-bottom-color: rgb(239, 102, 65);
+
+}
