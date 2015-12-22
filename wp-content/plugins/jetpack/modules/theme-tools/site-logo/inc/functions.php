@@ -98,7 +98,7 @@ function jetpack_has_site_logo() {
  */
 function jetpack_the_site_logo() {
 	$logo = site_logo()->logo;
-	$size = site_logo()->theme_size();
+	//$size = site_logo()->theme_size();
 	$html = '';
 
 	// If no logo is set, but we're in the Customizer, leave a placeholder (needed for the live preview).
