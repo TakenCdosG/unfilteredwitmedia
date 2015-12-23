@@ -4464,6 +4464,7 @@ body .ctct-embed-signup button, body .ctct-embed-signup input[type=submit]{
 .ctct-custom-form{
  min-width: 0 !important;
  padding: 0 !important;
+ margin-bottom: 25px;
 }
 
 a.more-link span{
@@ -4480,4 +4481,13 @@ border-bottom-color: rgb(239, 102, 65);
 
 .sidebar-column h4{
  color: #444444;
+}
+
+.ctct-embed-signup::after{
+ content: " ";
+ display: block;
+ margin: 50px 0 50px 0;
+ left: 0;
+ width: 55px;
+ border-bottom: solid 1px #222;
 }
