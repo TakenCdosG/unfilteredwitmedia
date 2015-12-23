@@ -11,7 +11,8 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="container">
 				<div class="subscribe-footer">
-					<?php dynamic_sidebar( 'footer-widget-1' ); ?>
+					<?php //dynamic_sidebar( 'footer-widget-1' ); ?>
+					<?php include('subscribe.php') ?>
 				</div>
 
 				<div class="subscribe-footer-new">

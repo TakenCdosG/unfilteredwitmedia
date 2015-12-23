@@ -518,7 +518,7 @@ margin-bottom: 25px;
 margin-bottom: 25px;	
 }
 
-h4.widget-title {
+h4.widget-title, .ctct-embed-signup h4 {
 color:#fff;
 font-size:18px;
 letter-spacing: 0;
@@ -4448,20 +4448,22 @@ bottom: 25px!important;
  display: block;
 }
 
-body .mc4wp-form-theme-green button, body .mc4wp-form-theme-green input[type=submit]{
+body .ctct-embed-signup button, body .ctct-embed-signup input[type=submit]{
  width: 100% !important;
  border-color: #f69944 !important;
  background-color: #f69944 !important;
  max-width: 351px !important;
+ height: 40px;
 }
 
-body .mc4wp-form-theme-green button:hover, body .mc4wp-form-theme-green input[type=submit]:hover{
- border-color: #f69944 !important;
- background-color: #f69944 !important;
+
+.ctct-embed-signup{
+ width: 100%;
 }
 
-.mc4wp-form-theme input[type=text], .mc4wp-form-theme input[type=email], .mc4wp-form-theme input[type=tel], .mc4wp-form-theme input[type=url], .mc4wp-form-theme input[type=date], .mc4wp-form-theme input[type=number], .mc4wp-form-theme select, .mc4wp-form-theme textarea{
- max-width: 351px !important;
+.ctct-custom-form{
+ min-width: 0 !important;
+ padding: 0 !important;
 }
 
 a.more-link span{
@@ -4470,4 +4472,12 @@ a.more-link span{
 a.more-link{
 border-bottom-color: rgb(239, 102, 65);
 
+}
+
+.ctct-custom-form input[type="text"]{
+ height: 40px;
+}
+
+.sidebar-column h4{
+ color: #444444;
 }
