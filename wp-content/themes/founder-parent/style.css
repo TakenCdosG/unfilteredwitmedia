@@ -4477,13 +4477,14 @@ border-bottom-color: rgb(239, 102, 65);
 
 .ctct-custom-form input[type="text"]{
  height: 40px;
+ max-width: 351px;
 }
 
 .sidebar-column h4{
  color: #444444;
 }
 
-.ctct-embed-signup::after{
+.sidebar-column .ctct-embed-signup::after{
  content: " ";
  display: block;
  margin: 50px 0 50px 0;
