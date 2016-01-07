@@ -7,3 +7,227 @@ Description:  Make your modifications to Founder in this child theme.
 Version:      1.0.0
 Template:     founder-parent
 */
+
+.ctct-embed-signup h4 {
+color:#fff;
+font-size:18px;
+letter-spacing: 0;
+margin-bottom: 15px;
+line-height:1.4;
+}
+
+.sub-header {
+	max-height: 700px;
+	background-color: #dbdbdb !important;
+}
+
+#header-inside {
+margin-top:0;
+}
+
+#header-inside .tagline{
+ margin: 0;
+}
+
+.background-cover-image {
+	opacity:0.4;
+	background-color: #dbdbdb;
+}
+
+#masthead .sub-header{
+background: #dbdbdb !important;
+}
+
+.sf-menu li:hover > ul, .sf-menu li.sfHover > ul{
+	background-color:#ccc !important;
+}
+
+.blog .background-cover-image, .single .background-cover-image{
+	opacity: 1;
+}
+
+.blog .entry-title{
+	display:none;
+}
+
+.blog .upper-text{
+	color: #ef6641;
+	font-family:"calluna-regular";
+	font-size:55px;
+}
+
+.blog .lower-text{
+	color: #696969;
+	font-family:"calluna-regular";
+	font-size:55px;
+}
+
+.site-footer{
+	background-image: url('http://www.unfilteredwitmedia.com/wp-content/uploads/2015/12/footerbg.png') !important;
+	background-size: cover !important;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100% !important;
+	height: 100%;
+	min-height: 756px;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+}
+
+.blog .entry-blog-title{
+	color: #ef6641;
+	font-family: "calluna-regular";
+}
+
+.blog .blog-meta span ,.blog .blog-content p{
+	font-family: "raleway-medium";
+}
+
+#primary-menu .menu-item.current-menu-item.current_page_item a{
+	color: #ef6641;
+}
+
+#primary-menu .menu-item a{
+	color: #010101;
+}
+
+.blog .hero-inside{
+	margin-left: 25%;
+	width: 75%;
+}
+
+.mc4wp-form button, .mc4wp-form input[type=submit]{
+	width:100%;
+	border-color: #f69944 !important;
+}
+
+/* MEDIA QUERIES*/
+@media screen and (min-width: 320px) and (max-width: 570px){
+	
+	.blog .hero-inside{
+		margin-left:9%;
+	}
+	
+	.blog .upper-text{
+		color: #ef6641;
+		font-family:"calluna-regular";
+		font-size:35px;
+	}
+	.blog .lower-text{
+		color: #696969;
+		font-family:"calluna-regular";
+		font-size:35px;
+	}
+}/*end 320 to 570*/
+
+@media screen and (min-width: 571px) and (max-width: 700px){
+	
+	.blog .hero-inside{
+		margin-left:15%;
+	}
+	
+	.blog .upper-text{
+		color: #ef6641;
+		font-family:"calluna-regular";
+		font-size:35px;
+	}
+	
+	.blog .lower-text{
+		color: #696969;
+		font-family:"calluna-regular";
+		font-size:35px;
+	}
+}/* end 501 to 700 */
+
+@media screen and (min-width: 701px) and (max-width: 992px){
+	
+	.blog .hero-inside{
+		margin-left:15%;
+	}
+	
+	.blog .upper-text{
+		color: #ef6641;
+		font-family:"calluna-regular";
+		font-size:43px;
+	}
+	
+	.blog .lower-text{
+		color: #696969;
+		font-family:"calluna-regular";
+		font-size:43px;
+	}
+}
+
+.single-post h1.entry-title{
+	color: #ef6641;
+	margin-top: 4%;
+}
+
+.hero-section {
+	width: 100%;
+}
+
+.block-comments {
+	background:transparent;
+}
+
+/**** social icons***/
+
+#menu-social ul li{
+	display: none;
+}
+
+#menu-social ul li#menu-item-374{
+	display: block;
+}
+
+body .ctct-embed-signup button, body .ctct-embed-signup input[type=submit]{
+	width: 100% !important;
+	border-color: #f69944 !important;
+	background-color: #f69944 !important;
+	max-width: 351px !important;
+	height: 40px;
+}
+
+.ctct-embed-signup{
+	width: 100%;
+}
+
+.ctct-custom-form{
+	min-width: 0 !important;
+	padding: 0 !important;
+	margin-bottom: 25px;
+}
+
+a.more-link span{
+	color: rgb(239, 102, 65);
+}
+
+a.more-link{
+	border-bottom-color: rgb(239, 102, 65);
+}
+
+.ctct-custom-form input[type="text"]{
+	height: 40px;
+	max-width: 351px;
+}
+
+.sidebar-column h4{
+	color: #444444;
+}
+
+.sidebar-column .ctct-embed-signup::after{
+	content: " ";
+	display: block;
+	margin: 50px 0 50px 0;
+	left: 0;
+	width: 55px;
+	border-bottom: solid 1px #222;
+}
+
+.blog-post img {
+	max-width: 642px;
+	display: block;
+	margin: 0 auto;
+}
