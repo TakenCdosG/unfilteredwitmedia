@@ -19,7 +19,12 @@ line-height:1.4;
 .sub-header {
 	max-height: 700px;
 	height: 700px;
-	background-color: #dbdbdb !important;
+}
+
+#masthead {
+	background-color: #dbdbdb;
+	background-image: url("/wp-content/uploads/2015/12/footerbg.png");
+	background-size: cover;
 }
 
 #header-inside {
@@ -229,6 +234,7 @@ a.more-link{
 
 .blog-post img {
 	max-width: 642px;
+	max-height: 400px;
 	display: block;
 	margin: 0 auto;
 }
