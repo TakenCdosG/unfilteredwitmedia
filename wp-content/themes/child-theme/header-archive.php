@@ -97,7 +97,8 @@
                         <div class="entry-header">
                         
                         <?php
-                          the_archive_title( '<h1 class="entry-title">', '</h1>' );
+                          //the_archive_title( '<h1 class="entry-title">', '</h1>' );
+                          print '<h1 class="entry-title">' . single_cat_title( '', false ) . '</h1>';
                           the_archive_description( '<h4 class="tagline">', '</h4>' );
                         ?>
                         
