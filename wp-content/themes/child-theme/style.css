@@ -160,7 +160,7 @@ background: #dbdbdb !important;
 	}
 }
 
-.single-post h1.entry-title{
+.single-post h1.entry-title, .category h1.entry-title {
 	color: #ef6641;
 	margin-top: 4%;
 }
