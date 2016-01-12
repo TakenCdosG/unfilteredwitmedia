@@ -95,7 +95,7 @@
                  <div class="hero-section">
                     <div class="hero-inside">
                       <div class="entry-header">
-                        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+                        <?php // the_title( '<h1 class="entry-title">', '</h1>' ); ?>
                         
                         <?php if (get_post_meta($post->ID, 'excerpt')) {
                               echo '<div class="tagline">';

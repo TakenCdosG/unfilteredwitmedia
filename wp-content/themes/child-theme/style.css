@@ -23,7 +23,7 @@ line-height:1.4;
 
 #masthead {
 	background-color: #dbdbdb;
-	background-image: url("/wp-content/uploads/2015/12/footerbg.png");
+	background-image: url("wp-content/uploads/2016/01/Susan_Blog_header.jpg");
 	background-size: cover;
 	z-index: auto;
 }
@@ -231,6 +231,10 @@ a.more-link{
 	left: 0;
 	width: 55px;
 	border-bottom: solid 1px #222;
+}
+
+.sidebar-column .meta-page-sidebar .current-cat a {
+	color: #EF6641;
 }
 
 .blog-post img {
