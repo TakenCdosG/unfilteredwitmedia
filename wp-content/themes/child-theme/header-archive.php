@@ -104,7 +104,8 @@
                         
                       </div>
                     </div>
-                 
+                    
+                 	<div class="unfiltered-wit-text">An Unfiltered <span class="orange-text">Wit</span></div>
                  </div>
             </div><!--end header inside-->
 

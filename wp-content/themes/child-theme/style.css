@@ -7,6 +7,7 @@ Description:  Make your modifications to Founder in this child theme.
 Version:      1.0.0
 Template:     founder-parent
 */
+@font-face { font-family: LinotypeZapfino; src: url("fonts/linotypezapfino-one_[allfont.net].ttf"); }
 
 .ctct-embed-signup h4 {
 color:#fff;
@@ -23,7 +24,7 @@ line-height:1.4;
 
 #masthead {
 	background-color: #dbdbdb;
-	background-image: url("wp-content/uploads/2016/01/Susan_Blog_header.jpg");
+	background-image: url("/wp-content/uploads/2016/01/Susan_Blog_header.jpg");
 	background-size: cover;
 	z-index: auto;
 }
@@ -242,4 +243,16 @@ a.more-link{
 	max-height: 400px;
 	display: block;
 	margin: 0 auto;
+}
+
+.unfiltered-wit-text {
+	font-family: 'LinotypeZapfino', arial;
+	font-size: 130px;
+	color: #000000;
+	line-height: 100%;
+	margin-top: 100px;
+}
+
+.unfiltered-wit-text .orange-text {
+	color: #EF6641;
 }
