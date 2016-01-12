@@ -113,11 +113,11 @@
 
                        <?php if ( is_home() ) {
                         // Determine context
-                        $page_id = ( 'page' == get_option( 'show_on_front' ) ? get_option( 'page_for_posts' ) : 'get_the_ID' );
+                        /*$page_id = ( 'page' == get_option( 'show_on_front' ) ? get_option( 'page_for_posts' ) : 'get_the_ID' );
                         // Echo post meta for $page_id
                         echo '<div class="tagline">';
                         echo get_post_meta( $page_id, 'excerpt', true ); 
-                        echo '</div>';
+                        echo '</div>';*/
                         }
                       ?>
                         
@@ -133,7 +133,8 @@
                         
                       </div>
                     </div>
-                 
+                 	
+                 	<div class="unfiltered-wit-text">An Unfiltered <span class="orange-text">Wit</span></div>
                  </div>
             </div><!--end header inside-->
             
