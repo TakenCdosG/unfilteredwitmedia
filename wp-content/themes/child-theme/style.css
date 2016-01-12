@@ -101,8 +101,9 @@ background: #dbdbdb !important;
 }
 
 .blog .hero-inside{
-	margin-left: 25%;
+	/*margin-left: 25%;*/
 	width: 75%;
+	margin-top: 100px;
 }
 
 .mc4wp-form button, .mc4wp-form input[type=submit]{
