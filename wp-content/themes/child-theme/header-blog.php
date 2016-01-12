@@ -69,7 +69,7 @@
 
                <!-- site title -->
            <?php
-              if ( function_exists( 'jetpack_the_site_logo' ) ) {
+              /*if ( function_exists( 'jetpack_the_site_logo' ) ) {
                   jetpack_the_site_logo();
               }
 
@@ -82,9 +82,9 @@
               $description = get_bloginfo( 'description', 'display' );
               if ( $description || is_customize_preview() ) : ?>
                   <p class="site-description"><?php echo esc_attr ($description); ?></p>
-              <?php endif;
+              <?php endif;*/
             ?>
-            
+            <div class="unfiltered-wit-text">An Unfiltered <span class="orange-text">Wit</span></div>
           </div><!-- end navigation section -->
         </div>
       </div>
@@ -113,11 +113,11 @@
 
                        <?php if ( is_home() ) {
                         // Determine context
-                        /*$page_id = ( 'page' == get_option( 'show_on_front' ) ? get_option( 'page_for_posts' ) : 'get_the_ID' );
+                        $page_id = ( 'page' == get_option( 'show_on_front' ) ? get_option( 'page_for_posts' ) : 'get_the_ID' );
                         // Echo post meta for $page_id
                         echo '<div class="tagline">';
                         echo get_post_meta( $page_id, 'excerpt', true ); 
-                        echo '</div>';*/
+                        echo '</div>';
                         }
                       ?>
                         
@@ -133,8 +133,6 @@
                         
                       </div>
                     </div>
-                 	
-                 	<div class="unfiltered-wit-text">An Unfiltered <span class="orange-text">Wit</span></div>
                  </div>
             </div><!--end header inside-->
             
