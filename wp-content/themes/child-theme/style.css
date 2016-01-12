@@ -101,7 +101,7 @@ background: #dbdbdb !important;
 }
 
 .blog .hero-inside{
-	/*margin-left: 25%;*/
+	margin-left: 0;
 	width: 75%;
 	margin-top: 100px;
 }
