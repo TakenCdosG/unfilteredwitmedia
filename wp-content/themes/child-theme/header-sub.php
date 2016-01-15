@@ -113,4 +113,4 @@
                       </div>
                     </div>
                     
-				<div class="unfiltered-wit-text">An Unfiltered <span class="orange-text">Wit</span></div>
+				<div class="unfiltered-wit-text">An <span class="orange-text">Un</span>filtered <span class="orange-text">Wit</span></div>

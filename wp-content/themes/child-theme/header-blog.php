@@ -84,7 +84,7 @@
                   <p class="site-description"><?php echo esc_attr ($description); ?></p>
               <?php endif;*/
             ?>
-            <div class="unfiltered-wit-text">An Unfiltered <span class="orange-text">Wit</span></div>
+            <div class="unfiltered-wit-text">An <span class="orange-text">Un</span>filtered <span class="orange-text">Wit</span></div>
           </div><!-- end navigation section -->
         </div>
       </div>

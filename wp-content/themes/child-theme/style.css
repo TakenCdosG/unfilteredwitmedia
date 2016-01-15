@@ -71,14 +71,14 @@ background: #dbdbdb !important;
 }
 
 .site-footer{
-	background-image: url('http://www.unfilteredwitmedia.com/wp-content/uploads/2015/12/footerbg.png') !important;
+	/*background-image: url('http://www.unfilteredwitmedia.com/wp-content/uploads/2015/12/footerbg.png') !important;*/
 	background-size: cover !important;
 	top: 0;
 	left: 0;
 	overflow: hidden;
 	width: 100% !important;
 	height: 100%;
-	min-height: 756px;
+	min-height: 500px;
 	background-repeat: no-repeat !important;
 	background-position: center center !important;
 }
