@@ -7,6 +7,7 @@ Author URI: http://solopine.com
 Version: 1.2
 License: GNU General Public License version 3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
+#ef6641
 */
 
 /* Global reset */
@@ -38,7 +39,9 @@ body {
 p {
 	line-height:23px;
 }
-
+span.cat a{
+    color: #ef6641;
+}
 a {
 	text-decoration:none;
 	color:#C69F73;
@@ -117,7 +120,7 @@ h1,h2,h3,h4,h5,h6 {
 		display:block;
 	}
 	#nav-wrapper .menu li.current-menu-item > a, #nav-wrapper .menu li.current_page_item > a, #nav-wrapper .menu li a:hover {
-		color:#C69F73;
+		color:#ef6641;
 	}
 	#nav-wrapper .menu li.current-menu-item > a, #nav-wrapper .menu li.current_page_item > a {
 		font-weight:700;
@@ -369,7 +372,7 @@ h1,h2,h3,h4,h5,h6 {
 	text-transform:uppercase;
 	letter-spacing:2px;
 	border-bottom:1px solid;
-	border-color:#C69F73;
+	border-color:#ef6641;
 	padding-bottom:2px;
 	display:inline-block;
 	margin:0 4px 12px 4px;
@@ -504,17 +507,17 @@ h1,h2,h3,h4,h5,h6 {
 		margin-top:16px;
 		padding:9px 24px 10px;
 		border:1px solid;
-		border-color:#C69F73;
+		border-color:#ef6641;
 		-o-transition:.2s;
 		-ms-transition:.2s;
 		-moz-transition:.2s;
 		-webkit-transition:.2s;
 	}
 	.more-button:hover {
-		background:#C69F73;
+		background:#ef6641;
 		color:#fff;
 		border:1px solid;
-		border-color:#C69F73;
+		border-color:#ef6641;
 	}
 	
 /*** Post Meta ***/
@@ -971,7 +974,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .widget-title {
 	border:1px solid;
-	border-color:#C69F73;
+	border-color:#ef6641;
 	font-size:10px;
 	color:#000;
 	text-transform:uppercase;
