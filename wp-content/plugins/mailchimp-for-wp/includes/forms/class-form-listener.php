@@ -55,6 +55,8 @@ class MC4WP_Form_Listener {
 			// form was valid, do something
 			$method = 'process_' . $form->get_action() . '_form';
 			call_user_func( array( $this, $method ), $form );
+		} else {
+			$this->get_log()->info( sprintf( "Form %d > Submitted with errors: %s", $form->ID, join( ', ', $form->errors ) ) );
 		}
 
 		$this->respond( $form );
@@ -92,14 +94,23 @@ class MC4WP_Form_Listener {
 
 		// do stuff on failure
 		if( ! $result ) {
-			// log error
-			error_log( sprintf( 'MailChimp for WordPress (form %d): %s', $form->ID, $api->get_error_message() ) );
 
-			// add error code to form object
-			$form->errors[] = ( $api->get_error_code() === 214 ) ? 'already_subscribed' : 'error';
+			if( $api->get_error_code() == 214 ) {
+				// handle "already_subscribed" as a soft-error
+				$form->errors[] = 'already_subscribed';
+				$this->get_log()->warning( sprintf( "Form %d > %s is already subscribed to the selected list(s)", $form->ID, $form->data['EMAIL'] ) );
+			} else {
+				// log error
+				$this->get_log()->error( sprintf( 'Form %d > MailChimp API error: %s', $form->ID, $api->get_error_message() ) );
+
+				// add error code to form object
+				$form->errors[] = 'error';
+			}
+
 			return;
 		}
 
+		$this->get_log()->info( sprintf( "Form %d > Successfully subscribed %s", $form->ID, $form->data['EMAIL'] ) );
 
 		/**
 		 * Fires right after a form was used to subscribe.
@@ -123,7 +134,14 @@ class MC4WP_Form_Listener {
 		}
 
 		if( ! $result ) {
-			$form->add_error( ( in_array( $api->get_error_code(), array( 215, 232 ) ) ? 'not_subscribed' : 'error' ) );
+			// not subscribed is a soft-error
+			if( in_array( $api->get_error_code(), array( 215, 232 ) ) ) {
+				$form->add_error( 'not_subscribed' );
+				$this->get_log()->info( sprintf( 'Form %d > %s is not subscribed to the selected list(s)', $form->ID, $form->data['EMAIL'] ) );
+			} else {
+				$form->add_error( 'error' );
+				$this->get_log()->error( sprintf( 'Form %d > MailChimp API error: %s', $form->ID, $api->get_error_message() ) );
+			}
 		}
 
 		/**
@@ -146,6 +164,17 @@ class MC4WP_Form_Listener {
 		if( $success ) {
 
 			/**
+			 * Fires right after a form is submitted without any errors (success).
+			 *
+			 * @since 3.0
+			 *
+			 * @param MC4WP_Form $form Instance of the submitted form
+			 */
+			do_action( 'mc4wp_form_success', $form );
+
+		} else {
+
+			/**
 			 * Fires right after a form is submitted with errors.
 			 *
 			 * @since 3.0
@@ -160,7 +189,7 @@ class MC4WP_Form_Listener {
 				/**
 				 * Fires right after a form was submitted with errors.
 				 *
-				 * The dynamic portion of the hook, `$error`, refers to the error that occured.
+				 * The dynamic portion of the hook, `$error`, refers to the error that occurred.
 				 *
 				 * Default errors give us the following possible hooks:
 				 *
@@ -178,15 +207,6 @@ class MC4WP_Form_Listener {
 				do_action( 'mc4wp_form_error_' . $error, $form );
 			}
 
-		} else {
-			/**
-			 * Fires right after a form is submitted without any errors (success).
-			 *
-			 * @since 3.0
-			 *
-			 * @param MC4WP_Form $form Instance of the submitted form
-			 */
-			do_action( 'mc4wp_form_success', $form );
 		}
 
 		/**
@@ -198,13 +218,13 @@ class MC4WP_Form_Listener {
 		 */
 		do_action( 'mc4wp_form_respond', $form );
 
-		// do stuff on success (non-AJAX)
+		// do stuff on success (non-AJAX only)
 		if( $success && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
 
 			// do we want to redirect?
 			$redirect_url = $form->get_redirect_url();
 			if ( ! empty( $redirect_url ) ) {
-				wp_redirect( $form->get_redirect_url() );
+				wp_redirect( $redirect_url );
 				exit;
 			}
 		}
@@ -215,6 +235,13 @@ class MC4WP_Form_Listener {
 	 */
 	protected function get_api() {
 		return mc4wp('api');
+	}
+
+	/**
+	 * @return MC4WP_Debug_Log
+	 */
+	protected function get_log() {
+		return mc4wp('log');
 	}
 
 }
