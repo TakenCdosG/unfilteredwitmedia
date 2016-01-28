@@ -27,10 +27,10 @@
 		<ul class="bxslider">
 		<?php foreach($images as $image) : ?>
 			
-			<?php $the_image = wp_get_attachment_image_src( $image, 'full-thumb' ); ?> 
+			<?php $the_image = wp_get_attachment_image_src( $image, 'full-thumb' ); ?>
 			<?php $the_caption = get_post_field('post_excerpt', $image); ?>
 			<li><img src="<?php echo esc_url($the_image[0]); ?>" <?php if($the_caption) : ?>title="<?php echo $the_caption; ?>"<?php endif; ?> /></li>
-			
+
 		<?php endforeach; ?>
 		</ul>
 		</div>

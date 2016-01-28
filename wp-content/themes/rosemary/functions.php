@@ -31,6 +31,7 @@ if ( !function_exists('solopine_theme_setup') ) {
 		add_theme_support( 'post-thumbnails' );
 		add_image_size( 'full-thumb', 1080, 0, true );
 		add_image_size( 'misc-thumb', 520, 400, true );
+        add_image_size( 'post-thumb', 320, 320, true );
 		
 		// Feed Links
 		add_theme_support( 'automatic-feed-links' );
