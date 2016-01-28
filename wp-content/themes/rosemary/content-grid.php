@@ -7,7 +7,7 @@
             $image = get_post_thumbnail_id();
             $the_image = wp_get_attachment_image_src( $image, 'misc-thumb' );
         ?>
-		<a href="<?php echo get_permalink() ?>"><div class="post-img" style="background-image: url(<?php echo esc_url($the_image[0]); ?>); background-size: cover; width: 320px; height: 320px; margin: auto; background-position: center;"></div></a>
+		<a href="<?php echo get_permalink() ?>"><div class="post-img" style="background-image: url(<?php echo esc_url($the_image[0]); ?>); background-size: cover; width: 365px; height: 284px; margin: auto; background-position: center;"></div></a>
 	</div>
 	<?php endif; ?>
 	
