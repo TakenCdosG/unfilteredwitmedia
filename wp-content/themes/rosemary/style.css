@@ -872,6 +872,7 @@ h1,h2,h3,h4,h5,h6 {
 	border-bottom:1px solid #e5e5e5;
 	padding-bottom:5px;
 	font-weight:700;
+    color: #ef6641;
 	-o-transition:.3s;
 	-ms-transition:.3s;
 	-moz-transition:.3s;
