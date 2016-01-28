@@ -341,14 +341,14 @@ h1,h2,h3,h4,h5,h6 {
 	display:inline-block;
 	padding:12px 26px 13px;
 	border:1px solid;
-	border-color: #C69F73;
+	border-color: #ef6641;
 	-o-transition:.2s;
 	-ms-transition:.2s;
 	-moz-transition:.2s;
 	-webkit-transition:.2s;
 }
 .feat-item .read-more:hover {
-	background:#C69F73;
+	background:#ef6641;
 	color:#fff;
 }
 
