@@ -1422,3 +1422,13 @@ div.wpcf7 {
 	background:#333;
 	color:#fff;
 }
+
+/* SUBSCRIBE TO WIT NEWSLETTER */
+.ctct-custom-form{
+    font: 13px !important;
+    min-width: 260px !important;
+    margin-top: 15px !important;
+}
+.ctct-custom-form .ctct-button{
+    background-color: #ef6641 !important;
+}
