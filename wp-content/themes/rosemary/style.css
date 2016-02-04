@@ -44,7 +44,7 @@ span.cat a{
 }
 a {
 	text-decoration:none;
-	color:#C69F73;
+	color:#ef6641;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -1431,4 +1431,10 @@ div.wpcf7 {
 }
 .ctct-custom-form .ctct-button{
     background-color: #ef6641 !important;
+}
+.ctct-form-footer{
+    display: none;
+}
+#nav-wrapper, .menu-mobile{
+    display: none;
 }
