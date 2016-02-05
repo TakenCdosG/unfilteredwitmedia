@@ -1438,3 +1438,8 @@ div.wpcf7 {
 #nav-wrapper, .menu-mobile{
     display: none;
 }
+
+/* FEATURED IMAGE POST */
+.single-post .post-img{
+    display: none;
+}
