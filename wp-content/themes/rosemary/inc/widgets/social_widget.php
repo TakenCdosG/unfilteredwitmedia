@@ -77,7 +77,7 @@ class solopine_social_widget extends WP_Widget {
            <div style="text-align:center;">Thanks for signing up!</div>
        </span>
        <form data-id="embedded_signup:form" class="ctct-custom-form Form" name="embedded_signup" method="POST" action="https://visitor2.constantcontact.com/api/signup">
-           <h2 style="margin:0;">Subscribe to Unfiltered Wit Newsletter</h2>
+           <h2 style="margin:0;">Subscribe to Unfiltered Wit Blog</h2>
            <p></p>
            <!-- The following code must be included to ensure your sign-up form works properly. -->
            <input data-id="ca:input" type="hidden" name="ca" value="c127debf-b161-4b7b-a114-39104d258c13">
