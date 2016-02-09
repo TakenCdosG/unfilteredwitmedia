@@ -1443,3 +1443,35 @@ div.wpcf7 {
 .single-post .post-img{
     display: none;
 }
+
+/* MEDIA QUERIES FOR THE LOGO */
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .logo-img{
+        width: 320px !important;
+        background-position:left !important;
+        min-width: 320px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 650px){
+    .logo-img{
+        width: 400px !important;
+        background-position:left !important;
+       margin-left: 60px;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 768px){
+    .logo-img{
+        width: 500px !important;
+        height: 141px !important;
+        background-size: contain !important;
+        background-position: center;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 960px){
+    .logo-img{
+        width: 700px !important;
+        height: 200px !important;
+        background-size: contain !important;
+        margin-left: 15px;
+    }
+}

@@ -81,17 +81,17 @@
 				<?php if(!get_theme_mod('sp_logo')) : ?>
 					
 					<?php if(is_front_page()) : ?>
-						<h1><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
+						<h1><a href="<?php echo home_url(); ?>"><div class="logo-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/logo.png); background-size:cover; width: 960px; height: 213px; background-position: center;"></div></a></h1>
 					<?php else : ?>
-						<h2><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php bloginfo( 'name' ); ?>" /></a></h2>
+						<h2><a href="<?php echo home_url(); ?>"><div class="logo-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/logo.png); background-size:cover; width: 960px; height: 213px; background-position: center;"></div>></a></h2>
 					<?php endif; ?>
 					
 				<?php else : ?>
 					
 					<?php if(is_front_page()) : ?>
-						<h1><a href="<?php echo home_url(); ?>"><img src="<?php echo esc_url(get_theme_mod('sp_logo')); ?>" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
+						<h1><a href="<?php echo home_url(); ?>"><div class="logo-img" style="background-image: url(<?php echo esc_url(get_theme_mod('sp_logo')); ?>); background-size:cover; width: 960px; height: 213px; background-position: center;"></div></a></h1>
 					<?php else : ?>
-						<h2><a href="<?php echo home_url(); ?>"><img src="<?php echo esc_url(get_theme_mod('sp_logo')); ?>" alt="<?php bloginfo( 'name' ); ?>" /></a></h2>
+						<h2><a href="<?php echo home_url(); ?>"><div class="logo-img" style="background-image: url(<?php echo esc_url(get_theme_mod('sp_logo')); ?>); background-size:cover; width: 960px; height: 213px; background-position: center;"></div></a></h2>
 					<?php endif; ?>
 					
 				<?php endif; ?>
