@@ -1440,7 +1440,7 @@ div.wpcf7 {
 }
 
 /* FEATURED IMAGE POST */
-.single-post .post-img{
+.single-post .post-img, .archive.category .post-img{
     display: none;
 }
 
