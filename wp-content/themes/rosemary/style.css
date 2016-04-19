@@ -1476,3 +1476,15 @@ div.wpcf7 {
         margin-left: 15px;
     }
 }
+
+/* HIDE/REMOVE LOGO FROM OTHER PAGES BUT THE HOMEPAGE */
+.page #logo{
+    display: none;
+}
+.home #logo{
+    display: block;
+}
+/*  ----------   */
+.wpcf7 p{
+    color: #ef6641;
+}
