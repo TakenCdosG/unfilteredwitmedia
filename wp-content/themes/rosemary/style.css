@@ -1435,9 +1435,6 @@ div.wpcf7 {
 .ctct-form-footer{
     display: none;
 }
-#nav-wrapper, .menu-mobile{
-    display: none;
-}
 .ctct-custom-form .ctct-form-required:before{
     content: "" !important;
 }
