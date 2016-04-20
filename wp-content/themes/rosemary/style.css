@@ -1452,12 +1452,18 @@ div.wpcf7 {
         min-width: 320px;
         margin-left: -50px;
     }
+    #attachment_1065{
+        width: 30% !important;
+    }
 }
 @media screen and (min-width: 480px) and (max-width: 650px){
     .logo-img{
         width: 350px !important;
         background-position:left !important;
        margin-left: 60px;
+    }
+    #attachment_1065{
+        width: 30% !important;;
     }
 }
 @media screen and (min-width: 650px) and (max-width: 768px){
@@ -1467,6 +1473,9 @@ div.wpcf7 {
         background-size: contain !important;
         background-position: center;
     }
+    #attachment_1065{
+        width: 30% !important;;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 960px){
     .logo-img{
@@ -1474,6 +1483,9 @@ div.wpcf7 {
         height: 200px !important;
         background-size: contain !important;
         margin-left: 15px;
+    }
+    #attachment_1065{
+        width: 30% !important;;
     }
 }
 
