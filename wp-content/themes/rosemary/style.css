@@ -1505,3 +1505,21 @@ div.wpcf7 {
     top: 10px !important;
     right: 10px !important;
 }
+@media screen and (min-width: 320px) and (max-width:480px){
+    #itro_popup .lefttext{
+        width: 250px !important;
+    }
+    #itro_popup .righttext{
+        margin: 25px !important;
+    }
+}
+@media screen and (min-width: 481px) and (max-width:780px){
+    #itro_popup .lefttext{
+        width: 400px !important;
+        border-right:none !important;
+    }
+    #itro_popup .righttext{
+        width: 350px !important;
+        margin: 25px !important;
+    }
+}
