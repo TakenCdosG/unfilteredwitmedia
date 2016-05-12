@@ -17,6 +17,8 @@
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+    <script src="https://use.typekit.net/ugk1roc.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 	
 	<?php wp_head(); ?>
 	

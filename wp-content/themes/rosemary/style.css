@@ -1500,3 +1500,8 @@ div.wpcf7 {
 .wpcf7 p{
     color: #ef6641;
 }
+/* ITRO POPUP */
+#close_cross{
+    top: 10px !important;
+    right: 10px !important;
+}
